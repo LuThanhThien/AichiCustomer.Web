@@ -30,3 +30,11 @@ logging:
   level:
     org.hibernate.SQL: debug
     org.hibernate.type.descriptor.sql.BasicBinder: trace
+
+application:
+  security:
+    jwt:
+      secret-key: d69d527360b798b822c7b463e00196b2c3e065a37eb517d494417fa0546bf12f
+      expiration: 604800000 # 7 day
+      refresh-token:
+        expiration: 1209600000 # 14 days
